@@ -1,5 +1,5 @@
 //DecBin.java 161027
-//NathanC
+//Bradyt
 class DecBin{
 	public static void main (String a[]){
 	
