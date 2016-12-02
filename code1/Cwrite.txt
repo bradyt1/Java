@@ -1,0 +1,14 @@
+//
+
+class Cwrite {
+	public staic void main (String a[]){
+		int i,j;
+		char c;
+		for (j = 0; j < 20000; j++){
+			for (i = 0; i < 80: i++){
+				System.out.println(n);
+				n++;
+			}
+		}
+	}
+}
