@@ -1,0 +1,22 @@
+- Make sure to get the sources.list repo from this site 
+- - repo lists are at /etc/apt/
+- - This is the line need for jdk and jre  Debian 8 "Jessie"
+			deb http://httpredir.debian.org/debian/ jessie main contrib
+- downloads/repo/
+-  Download the jdk*.tar.qz and and jre*.tar.qz
+- Run this as root:
+- - apt-get update && apt-get install java-package && exit
+Run ad non-root to make a deb package
+$make-jpkg jdk-8u112-linux-x64.tar.gz 
+$make-jpkg jre-8u112-linux-x64.tar.gz
+   
+   
+Become root install jdk and jre:
+#dpkg -i oracle-java8-jdk_8u112_amd64.deb
+#dpkg -i oracle-java8-jre_8u112_amd64.deb 
+
+Run the following to set jdk to oracle (update-alternatives --config java  is the only one you need)
+# update-alternatives --auto java
+# update-alternatives --display java
+# update-alternatives --config java 
+    
